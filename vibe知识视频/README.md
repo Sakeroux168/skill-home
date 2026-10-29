@@ -52,12 +52,15 @@ vibe知识视频/
     嫉妒-剧本v3.md       ← 当前剧本（v3；v3.1 的改动见 路线与经验.md）
     嫉妒-剧本v2.md / 嫉妒-分镜.md   ← 旧版，留作对照
     嫉妒-15秒样片*.mp4   ← 两支早期 15 秒样片（音效是合成的，没用 BGM）
+    嫉妒-封面-16x9.png / 嫉妒-封面-3x4.png ← 封面（视频封面 / 主页竖版格子）
+    嫉妒-发布文案.md      ← 抖音、企鹅号的标题、简介、话题，发布注意事项
     （v3 / v3.1 完整版含 BGM，没放进仓库）
     src/
       film2.html        ← ★ 当前版本（v3.1）的全部画面代码，window.draw(t)
       sound_film2.py    ← ★ 当前版本的混音：BGM + 音效
       common.js         ← 共用：种子随机数、字体加载、颗粒、暗角
       render.js         ← Playwright 逐帧导出 jpg（也能只出指定时刻的静帧）
+      cover.html / cover.js ← 封面（复用 film2 的画法；node cover.js 输出到 out/）
       package.json      ← 字体依赖（@fontsource 的 Noto Serif SC 等）
       film.html / sound_film.py     ← v3
       curse.html / sound_curse.py   ← 第一次照《知识诅咒》画风做的 15 秒样片
