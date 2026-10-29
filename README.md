@@ -50,6 +50,30 @@ Skill 之家。
 - **特点**:八条规矩 + 两套颜色(浅色 / 深色)+ 现成的 Qt 主题文件(`assets/qt_theme.py`)和网页 CSS(`assets/web_theme.css`),还有踩过的坑(圆角太大 Qt 画成直角、换主题白底白字……)。
 - **来源**:自己做的,从「企鹅号发布助手」(Sakeroux168/qq-video)的界面提炼,2026-10-23。
 
+### 6. 柠檬opus（Lemo-Opuscar 代码做片风格库）
+
+- **路径**：`skills/柠檬opus/`
+  - agent 先读 `AGENTS.md`，再读 `DIRECTOR.md`（怎么导）、`TECHNIQUE.md`（怎么做）。
+  - 插件版的入口是 `plugin/skills/lemo-opuscar/SKILL.md`。
+- **一句话用途**：让 coding agent 用代码导演、作画、配乐、混音，做出整支短片。画面由 Canvas / WebGL 逐帧渲染，不用视频生成，也不用素材库画面。库里有 66 种现成风格，每种是一份 `styles/<风格>/STYLE.md` 加一支能跑的样片源码，也能把风格改成自己的。
+- **适合什么时候用**：
+  - 做「Vibe 知识大赏」这类代码生成的知识短片、科普解说、产品宣传片、数据叙事片时。
+  - 想照着某种画风（水墨、浮世绘、卫星简报、产品拆解……）做一支 30–120 秒的片子时。
+  - 想拆一支样片的技法（逐帧渲染、配乐、混音、字幕）时。
+- **特点**：
+  - 一支片子要 30–60 分钟，token 用量不小。
+  - 风格是按 Claude Opus 5.5 调出来的，换别的模型效果不保证。
+  - 默认输出 1920×1080、24fps。
+- **运行需要**：Node 20+、ffmpeg、Python 3.11+（或 uv）。配音要 `requirements-voice.txt`（Kokoro / edge-tts / Whisper），配乐要 `requirements-music.txt`。中文字幕要有中文字体。
+- **来源**：`lemomo-ai/lemo-opuscar`（作者 Lemomo）
+- **收藏版本**：上游 commit `ea34ff9546f675f9fd65a3c84e869a1da7471ad7`（2026-10-29），整套原文件保留，只去掉了 `.git`。
+- **许可证**：
+  - 代码和文档：MIT。
+  - 样片视频和静帧：CC BY 4.0，转载须署名 LemoLab 并附上游链接。
+  - 用它做出来的片子归自己。
+  - 上游声明有三段配音不在 CC BY 范围内：Game Show 的系统语音、Paper-cut Lightbox 的 Edge TTS、News Package 的豆包 TTS。本仓库里只有这三段的文字稿，没有音频。
+- **实战记录**：用它的工具链做过《七宗罪·嫉妒》（画风照抖音爆款《知识诅咒》自建，没用库里的现成风格）。过程和经验在 `Sakeroux168/qq-video` 的 `vibe-knowledge-video` 分支。
+
 ## 已收藏 Skill 合集
 
 ### VSC AIGC 视觉创作 Skill 合集
