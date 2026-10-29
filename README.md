@@ -72,7 +72,7 @@ Skill 之家。
   - 样片视频和静帧：CC BY 4.0，转载须署名 LemoLab 并附上游链接。
   - 用它做出来的片子归自己。
   - 上游声明有三段配音不在 CC BY 范围内：Game Show 的系统语音、Paper-cut Lightbox 的 Edge TTS、News Package 的豆包 TTS。本仓库里只有这三段的文字稿，没有音频。
-- **实战记录**：用它的工具链做过《七宗罪·嫉妒》（画风照抖音爆款《知识诅咒》自建，没用库里的现成风格）。过程和经验在 `Sakeroux168/qq-video` 的 `vibe-knowledge-video` 分支。
+- **实战记录**：用它的工具链做过《七宗罪·嫉妒》（画风照抖音爆款《知识诅咒》自建，没用库里的现成风格）。过程和经验在本仓库的 `vibe-videos` 分支，见 `vibe知识视频/`。
 
 ## 已收藏 Skill 合集
 
